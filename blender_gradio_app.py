@@ -186,7 +186,6 @@ def render_single_frame(blender_file, selected_file_name):
         return "No file provided.", None, ""
 
     output_file_base_path = os.path.join(workspace_dir, "frame")
-    output_file_path = output_file_base_path + "_####.png"
 
     command = [
         "./blender/blender", "-P", "./blender/setgpu.py", "-b", blend_file_path,
